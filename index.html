@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clickable Buttons</title>
+    <title>Clickable Buttons with Arrow</title>
     <style>
         .button {
             display: inline-block;
@@ -15,7 +15,14 @@
             border-radius: 5px;
             cursor: pointer;
             margin: 10px;
-            content: '\25ba';
+            position: relative; /* Added */
+        }
+        .button::after { /* Added */
+            content: '\25ba'; /* Unicode for right-pointing triangle/arrow */
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
         }
         .button:hover {
             background-color: #0056b3;
