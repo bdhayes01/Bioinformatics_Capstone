@@ -1,9 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickable Buttons</title>
+    <style>
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
 <body>
+    <h1>Clickable Buttons</h1>
+    <button class="button" onclick="buttonClicked('button1')">Button 1</button>
+    <button class="button" onclick="buttonClicked('button2')">Button 2</button>
+    <button class="button" onclick="buttonClicked('button3')">Button 3</button>
+    <button class="button" onclick="buttonClicked('button4')">Button 4</button>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+    <p id="result"></p>
 
+    <script>
+        function buttonClicked(buttonId) {
+            document.getElementById("result").innerText = "Button " + buttonId + " clicked!";
+        }
+    </script>
 </body>
 </html>
