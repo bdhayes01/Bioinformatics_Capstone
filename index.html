@@ -22,11 +22,13 @@
     </style>
 </head>
 <body>
-    <h1>Clickable Buttons</h1>
-    <button class="button" onclick="buttonClicked('button1')">Button 1</button>
-    <button class="button" onclick="buttonClicked('button2')">Button 2</button>
-    <button class="button" onclick="buttonClicked('button3')">Button 3</button>
-    <button class="button" onclick="buttonClicked('button4')">Button 4</button>
+    <div class="flexbox">
+        <h1>Clickable Buttons</h1>
+        <div><button class="button" onclick="buttonClicked('button1')">Button 1</button></div>
+        <div><button class="button" onclick="buttonClicked('button2')">Button 2</button></div>
+        <div><button class="button" onclick="buttonClicked('button3')">Button 3</button></div>
+        <div><button class="button" onclick="buttonClicked('button4')">Button 4</button></div>
+    </div>
 
     <p id="result"></p>
 
