@@ -18,11 +18,14 @@
 </head>
 <body>
 
-<button id="colorButton" onclick="changeColor()">Change Color</button>
+<div class="flex-container">        
+    <div><button onclick="changeColor(button1)">Change Color</button></div>
+    <div><button onclick="changeColor(button2)">Change the Color</button></div>
+</div>
 
 <script>
-function changeColor() {
-    var button = document.getElementById("colorButton");
+function changeColor(buttonId) {
+    var button = document.getElementById(buttonId);
     if (button.style.backgroundColor === "blue") {
         button.style.backgroundColor = "red";
     } else {
