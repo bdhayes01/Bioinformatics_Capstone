@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -35,12 +35,12 @@
 </script>
 
 </body>
-</html>
+</html> -->
 
 
 
 
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -74,19 +74,22 @@
 <body>
     <div class="flexbox">
         <h1>Clickable Buttons</h1>
-        <div><button class="button" onclick="buttonClicked('button1')>Button 1</button></div>
+        <div><button class="button" onclick="buttonClicked('button1')">Button 1</button></div>
         <div><button class="button" onclick="buttonClicked('button2')">Button 2</button></div>
         <div><button class="button" onclick="buttonClicked('button3')">Button 3</button></div>
         <div><button class="button" onclick="buttonClicked('button4')">Button 4</button></div>
     </div>
 
-    <p id="result"></p>
-
     <script>
         function buttonClicked(buttonId) {
-            // document.getElementById("result").innerText = "Button " + buttonId + " clicked!";
-            document.getElementById(buttonId).background-color='red';
+            var this_button = document.getElementById(buttonId);
+            if (this_button.background-color === "blue") {
+                this_button.background-color = "red";
+            } else {
+                this_button.background-color = "blue";
+            }
+            // document.getElementById(buttonId).background-color='red';
         }
     </script>
 </body>
-</html> -->
+</html>
