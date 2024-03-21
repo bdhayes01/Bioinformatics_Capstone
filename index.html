@@ -1,6 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color Changing Button</title>
+<style>
+    /* Define the initial style for the button */
+    #colorButton {
+        background-color: blue;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+
+<button id="colorButton" onclick="changeColor()">Change Color</button>
+
+<script>
+function changeColor() {
+    var button = document.getElementById("colorButton");
+    if (button.style.backgroundColor === "blue") {
+        button.style.backgroundColor = "red";
+    } else {
+        button.style.backgroundColor = "blue";
+    }
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clickable Buttons with Arrow</title>
@@ -47,4 +86,4 @@
         }
     </script>
 </body>
-</html>
+</html> -->
