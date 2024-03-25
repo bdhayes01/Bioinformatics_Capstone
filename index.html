@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -42,5 +42,38 @@
             // document.getElementById(buttonId).background-color='red';
         }
     </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Button Content Change</title>
+<style>
+  /* Optional: Styling for button */
+  .btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<!-- Initial content -->
+<button id="myButton" class="btn">Click me</button>
+
+<script>
+  // JavaScript to change content after click
+  document.getElementById("myButton").addEventListener("click", function() {
+    this.innerHTML = "Content changed!";
+  });
+</script>
+
 </body>
 </html>
