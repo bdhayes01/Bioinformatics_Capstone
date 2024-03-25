@@ -32,17 +32,13 @@
 <body>
     <div class="flexbox">
         <h1>Clickable Buttons</h1>
-        <div><button class="button" onclick="buttonClicked('button1')">Button 1</button></div>
+        <div><button class="button" value="button1" onclick="buttonClicked('button1')"> das text </button></div>
     </div>
 
     <script>
         function buttonClicked(buttonId) {
             var this_button = document.getElementById(buttonId);
-            if (this_button.background-color === "blue") {
-                this_button.background-color = "red";
-            } else {
-                this_button.background-color = "blue";
-            }
+            this_button.innerHTML = 'new text';
             // document.getElementById(buttonId).background-color='red';
         }
     </script>
