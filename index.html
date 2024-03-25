@@ -32,11 +32,11 @@
 <body>
     <div class="flexbox">
         <h1>Clickable Buttons</h1>
-        <div><button class="button" onclick="buttonClicked('button1')"> das text </button></div>
+        <div><button id="button1" class="button" onclick="buttonClicked('button1')"> das text </button></div>
     </div>
 
     <script>
-        document.getElementById("myButton").addEventListener("click", function() {
+        document.getElementById("button1").addEventListener("click", function() {
             this.innerHTML = "Content changed!";
           });
         function buttonClicked(buttonId) {
