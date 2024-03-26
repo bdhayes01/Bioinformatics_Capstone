@@ -15,10 +15,6 @@
             margin: 10px;
             position: relative; /* Added */
         }
-        /*.button::after { !* Added *!*/
-        /*    !*content: '\2191';*!*/
-        /*    font-size: xx-large;*/
-        /*}*/
         .flex-container-row {
             display: flex;
             flex-direction: row;
@@ -33,38 +29,82 @@
 </head>
 <body>
 <div class="flex-container-col">
-    <h1>Clickable. Buttons</h1>
     <div class="flex-container-row">
+        <div><button class="button" style="background: #FFFFFF; font-size:small; color:black; padding:5px 23px;" disabled>Habitat<br/> Change</button></div>
+        <div><button class="button" style="background: #FFFFFF; font-size:small; color:black; padding:5px 23px;" disabled>Climate<br/> Change</button></div>
+        <div><button class="button" style="background: #FFFFFF; font-size:small; color:black; padding:5px 23px;" disabled>Invasive<br/> Species</button></div>
+        <div><button class="button" style="background: #FFFFFF; font-size:small; color:black; padding:5px 12px;" disabled>Over<br/> Exploitation</button></div>
+        <div><button class="button" style="background: #FFFFFF; font-size:small; color:black; padding:13px 21px;" disabled>Pollution</button></div>
+<!--        <div style="width: 100px; height:100px; background-color: #FFFFFF;">Pollution</div>-->
+    </div>
+
+    <div class="flex-container-row">
+        <div><button class="button" style="background: #FFFFFF; font-size:small; color:black; padding:5px 23px;" disabled>Boreal Forest</button></div>
         <div><button id='button1' class="button" style="background: #FFFFFF; font-size:xx-large" ondblclick="buttonClicked(id)">&#x2194;</button></div>
         <div><button id='button2' class="button" style="background: #FFFFFF; font-size:xx-large" ondblclick="buttonClicked(id)">&#x2194;</button></div>
         <div><button id='button3' class="button" style="background: #FFFFFF; font-size:xx-large" ondblclick="buttonClicked(id)">&#x2194;</button></div>
         <div><button id='button4' class="button" style="background: #FFFFFF; font-size:xx-large" ondblclick="buttonClicked(id)">&#x2194;</button></div>
+        <div><button id='button5' class="button" style="background: #FFFFFF; font-size:xx-large" ondblclick="buttonClicked(id)">&#x2194;</button></div>
     </div>
     <div class="flex-container-col">
-        <div><button class="button" style="background: #FFFFFF; font-size: xx-large" onclick="north_arrow()">&#x2191;</button></div>
-        <div><button class="button" style="background: #FFFFFF; font-size: xx-large" onclick="north_east_arrow()">&#x2197;</button></div>
-        <div><button class="button" style="background: #FFFFFF; font-size: xx-large" onclick="east_arrow()">&#x2192;</button></div>
-        <div><button class="button" style="background: #FFFFFF; font-size: xx-large" onclick="south_east_arrow()">&#x2198;</button></div>
-        <div><button class="button" style="background: #FFFFFF; font-size: xx-large" onclick="south_arrow()">&#x2193;</button></div>
+
+        <div class="flex-container-row">
+            <div><button class="button" style="background: #FDFBC7FF; font-size: medium" onclick="cream()">Set Color</button></div>
+            <div><button class="button" style="background: #FFFFFF; font-size: xx-large" onclick="north_arrow()">&#x2191;</button></div>
+        </div>
+
+        <div class="flex-container-row">
+            <div><button class="button" style="background: #E9D700FF; font-size: medium" onclick="yellow()">Set Color</button></div>
+            <div><button class="button" style="background: #FFFFFF; font-size: xx-large" onclick="north_east_arrow()">&#x2197;</button></div>
+        </div>
+
+        <div class="flex-container-row">
+            <div><button class="button" style="background: #D6A414FF; font-size: medium" onclick="orange()">Set Color</button></div>
+            <div><button class="button" style="background: #FFFFFF; font-size: xx-large" onclick="east_arrow()">&#x2192;</button></div>
+        </div>
+
+        <div class="flex-container-row">
+            <div><button class="button" style="background: #A3162BFF; font-size: medium" onclick="red()">Set Color</button></div>
+            <div><button class="button" style="background: #FFFFFF; font-size: xx-large" onclick="south_east_arrow()">&#x2198;</button></div>
+        </div>
+
+        <div class="flex-container-row">
+            <div><button class="button" style="background: #FFFFFF; font-size: medium" onclick="reset()">Reset</button></div>
+            <div><button class="button" style="background: #FFFFFF; font-size: xx-large" onclick="south_arrow()">&#x2193;</button></div>
+        </div>
+
+
     </div>
 </div>
 <script>
-    var curr_button = null;
+    let curr_button = null;
 
     function buttonClicked(buttonId) {
-        var this_button = document.getElementById(buttonId);
-        curr_button = this_button;
-        if("rgb(255, 255, 255)" === this_button.style.background){
-            this_button.style.background = "rgb(253, 251, 199)";
-        } else if("rgb(253, 251, 199)" === this_button.style.background){
-            this_button.style.background = "rgb(233, 215, 0)";
-        } else if("rgb(233, 215, 0)" === this_button.style.background){
-            this_button.style.background = "rgb(214, 164, 20)";
-        } else if("rgb(214, 164, 20)" === this_button.style.background){
-            this_button.style.background = "rgb(163, 22, 43)";
-        } else if("rgb(163, 22, 43)" === this_button.style.background){
-            this_button.style.background = "rgb(253, 251, 199)";
+        if (curr_button){
+            curr_button.style.border = "0px";
+            if (curr_button === document.getElementById(buttonId)){
+                curr_button = null;
+                return;
+            }
         }
+        curr_button = document.getElementById(buttonId);
+        curr_button.style.border = "2px solid lightgreen";
+    }
+    function cream(){
+        curr_button.style.background = "rgb(253, 251, 199)";
+    }
+    function yellow(){
+        curr_button.style.background = "rgb(233, 215, 0)";
+    }
+    function orange(){
+        curr_button.style.background = "rgb(214, 164, 20)";
+    }
+    function red(){
+        curr_button.style.background = "rgb(163, 22, 43)";
+    }
+    function reset(){
+        curr_button.style.background = "rgb(255,255,255)";
+        curr_button.innerHTML = '&#x2194';
     }
 
     function north_arrow(){
