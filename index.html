@@ -37,9 +37,16 @@
         <div><button class="button" style="background: #FFFFFF; font-size:small; color:black; padding:13px 21px;" disabled>Pollution</button></div>
 <!--        <div style="width: 100px; height:100px; background-color: #FFFFFF;">Pollution</div>-->
     </div>
+    <div class="flex-container-row">
+        <div><button class="button" style="background: #E7ECB7; font-size:small; color:black; padding:16px 50px;" disabled>Boreal Forest</button></div>
+        <div><button class="button" style="background: #FDFBC7FF; font-size:xx-large; color:black; padding:4px 30px;" disabled>&#x2197;</button></div>
+        <div><button class="button" style="background: #FDFBC7FF; font-size:xx-large; color:black" disabled>&#x2191;</button></div>
+        <div><button class="button" style="background: #FDFBC7FF; font-size:xx-large; color:black; padding:4px 30px;" disabled>&#x2197;</button></div>
+        <div><button class="button" style="background: #FDFBC7FF; font-size:xx-large; color:black" disabled>&#x2192;</button></div>
+        <div><button class="button" style="background: #E9D700FF; font-size:xx-large; color:black" disabled>&#x2191;</button></div>
+    </div>
 
     <div class="flex-container-row">
-        <div><button class="button" style="background: #FFFFFF; font-size:small; color:black; padding:5px 23px;" disabled>Boreal Forest</button></div>
         <div><button id='button1' class="button" style="background: #FFFFFF; font-size:xx-large" ondblclick="buttonClicked(id)">&#x2194;</button></div>
         <div><button id='button2' class="button" style="background: #FFFFFF; font-size:xx-large" ondblclick="buttonClicked(id)">&#x2194;</button></div>
         <div><button id='button3' class="button" style="background: #FFFFFF; font-size:xx-large" ondblclick="buttonClicked(id)">&#x2194;</button></div>
@@ -67,11 +74,7 @@
             <div><button class="button" style="background: #A3162BFF; font-size: medium" onclick="red()">Set Color</button></div>
             <div><button class="button" style="background: #FFFFFF; font-size: xx-large" onclick="south_east_arrow()">&#x2198;</button></div>
         </div>
-
-        <div class="flex-container-row">
-            <div><button class="button" style="background: #FFFFFF; font-size: medium" onclick="reset()">Reset</button></div>
-            <div><button class="button" style="background: #FFFFFF; font-size: xx-large" onclick="south_arrow()">&#x2193;</button></div>
-        </div>
+        
 
 
     </div>
@@ -112,12 +115,14 @@
     }
     function north_east_arrow(){
         curr_button.innerHTML = '&#x2197';
+        curr_button.style.padding = "4px 30px";
     }
     function east_arrow(){
         curr_button.innerHTML = '&#x2192';
     }
     function south_east_arrow(){
         curr_button.innerHTML = '&#x2198';
+        curr_button.style.padding = "4px 30px";
     }
     function south_arrow(){
         curr_button.innerHTML = '&#x2193';
