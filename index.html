@@ -20,12 +20,12 @@
         .flex-container-row {
             display: flex;
             flex-direction: row;
-            background-color: lightgray;
+            background-color: white;
         }
         .flex-container-col {
             display: flex;
             flex-direction: column;
-            background-color: lightgray;
+            background-color: white;
         }
     </style>
 </head>
@@ -73,15 +73,47 @@
     </div>
     <div class="flex-container-row">
         <div><button class="button" style="background: #F9F2D3; font-size:small; color:black; cursor: default;" disabled>Mediterranean</button></div>
-        <div><button class="button" style="background: #A3162BFF; font-size:xx-large; color:black; cursor: default;;" disabled>&#x2197;</button></div>
+        <div><button class="button" style="background: #D6A414FF; font-size:xx-large; color:black; cursor: default;;" disabled>&#x2197;</button></div>
         <div><button class="button" style="background: #FDFBC7FF; font-size:xx-large; color:black; cursor: default;" disabled>&#x2191;</button></div>
+        <div><button class="button" style="background: #D6A414FF; font-size:xx-large; color:black; cursor: default;" disabled>&#x2191;</button></div>
+        <div><button class="button" style="background: #E9D700FF; font-size:xx-large; color:black; cursor: default;" disabled>&#x2192;</button></div>
+        <div><button class="button" style="background: #FDFBC7FF; font-size:xx-large; color:black; cursor: default;" disabled>&#x2191;</button></div>
+    </div>
+    <div class="flex-container-row">
+        <div><button class="button" style="background: #F9F2D3; font-size:small; color:black; cursor: default;" disabled>Tropical Grassland and Savanna</button></div>
+        <div><button class="button" style="background: #D6A414FF; font-size:xx-large; color:black; cursor: default;;" disabled>&#x2197;</button></div>
+        <div><button class="button" style="background: #E9D700FF; font-size:xx-large; color:black; cursor: default;" disabled>&#x2191;</button></div>
+        <div><button class="button" style="background: #FDFBC7FF; font-size:xx-large; color:black; cursor: default;" disabled>&#x2191;</button></div>
+        <div><button class="button" style="background: #A3162BFF; font-size:xx-large; color:black; cursor: default;" disabled>&#x2192;</button></div>
+        <div><button class="button" style="background: #E9D700FF; font-size:xx-large; color:black; cursor: default;" disabled>&#x2191;</button></div>
+    </div>
+    <div class="flex-container-row">
+        <div><button class="button" style="background: #F9F2D3; font-size:small; color:black; cursor: default;" disabled>Desert</button></div>
+        <div><button class="button" style="background: #FDFBC7FF; font-size:xx-large; color:black; cursor: default;;" disabled>&#x2192;</button></div>
+        <div><button class="button" style="background: #E9D700FF; font-size:xx-large; color:black; cursor: default;" disabled>&#x2191;</button></div>
         <div><button class="button" style="background: #E9D700FF; font-size:xx-large; color:black; cursor: default;" disabled>&#x2192;</button></div>
         <div><button class="button" style="background: #FDFBC7FF; font-size:xx-large; color:black; cursor: default;" disabled>&#x2192;</button></div>
+        <div><button class="button" style="background: #FDFBC7FF; font-size:xx-large; color:black; cursor: default;" disabled>&#x2191;</button></div>
+    </div>
+    <div class="flex-container-row">
+        <div><button class="button" style="background: #E8E9F4; font-size:small; color:black; cursor: default;" disabled>Inland Water</button></div>
+        <div><button class="button" style="background: #A3162BFF; font-size:xx-large; color:black; cursor: default;;" disabled>&#x2191;</button></div>
+        <div><button class="button" style="background: #FDFBC7FF; font-size:xx-large; color:black; cursor: default;" disabled>&#x2191;</button></div>
+        <div><button class="button" style="background: #D6A414FF; font-size:xx-large; color:black; cursor: default;" disabled>&#x2191;</button></div>
+        <div><button class="button" style="background: #E9D700FF; font-size:xx-large; color:black; cursor: default;" disabled>&#x2192;</button></div>
         <div><button class="button" style="background: #A3162BFF; font-size:xx-large; color:black; cursor: default;" disabled>&#x2191;</button></div>
+    </div>
+    <div class="flex-container-row">
+        <div><button class="button" style="background: #E8E9F4; font-size:small; color:black; cursor: default;" disabled>Coastal</button></div>
+        <div><button id='coastal_button1' class="button" style="background: #FFFFFF; font-size:xx-large; border:1px solid black;" ondblclick="buttonClicked(id)">&#x2194;</button></div>
+        <div><button id='coastal_button2' class="button" style="background: #FFFFFF; font-size:xx-large; border:1px solid black;" ondblclick="buttonClicked(id)">&#x2194;</button></div>
+        <div><button id='coastal_button3' class="button" style="background: #FFFFFF; font-size:xx-large; border:1px solid black;" ondblclick="buttonClicked(id)">&#x2194;</button></div>
+        <div><button id='coastal_button4' class="button" style="background: #FFFFFF; font-size:xx-large; border:1px solid black;" ondblclick="buttonClicked(id)">&#x2194;</button></div>
+        <div><button id='coastal_button5' class="button" style="background: #FFFFFF; font-size:xx-large; border:1px solid black;" ondblclick="buttonClicked(id)">&#x2194;</button></div>
     </div>
 
     <div class="flex-container-row">
-        <div><button id='button1' class="button" style="background: #FFFFFF; font-size:xx-large" ondblclick="buttonClicked(id)">&#x2194;</button></div>
+        <div><button id='button1' class="button" style="background: #FFFFFF; font-size:xx-large; border:1px solid black;" ondblclick="buttonClicked(id)">&#x2194;</button></div>
         <div><button id='button2' class="button" style="background: #FFFFFF; font-size:xx-large" ondblclick="buttonClicked(id)">&#x2194;</button></div>
         <div><button id='button3' class="button" style="background: #FFFFFF; font-size:xx-large" ondblclick="buttonClicked(id)">&#x2194;</button></div>
         <div><button id='button4' class="button" style="background: #FFFFFF; font-size:xx-large" ondblclick="buttonClicked(id)">&#x2194;</button></div>
