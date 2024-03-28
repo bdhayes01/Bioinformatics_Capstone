@@ -27,11 +27,19 @@
         .flex-container-col {
             display: flex;
             flex-direction: column;
-            background-color: maroon;
+            justify-content: center;
         }
     </style>
 </head>
 <body>
+<div class="flex-container-row">
+
+    <div class="button" style="justify-content: center; background: white; padding-left:25px ">
+        <p><a href="/Instructions.html">
+            Instructions</a></p>
+    </div>
+</div>
+
 <div class="flex-container-col">
     <div class="flex-container-row">
         <div><button class="button" style="background: #FFFFFF; font-size:small; color:black; padding:5px 23px; cursor: default;" disabled>Drivers:</button></div>
@@ -179,6 +187,9 @@
         <div><button class="button" style="background: #A3162BFF; font-size: medium" onclick="red()">Set Color</button></div>
         <div><button class="button" style="background: #FFFFFF; font-size: xx-large" onclick="north_arrow()">&#x2191;</button></div>
         <div><button class="button" style="font-size:small; cursor: default;" disabled>Very Rapid Increase of the Impact</button></div>
+    </div>
+    <div class="flex-container-row" style="justify-content: right">
+        <p>Source: Millennium Ecosystem Assessment</p>
     </div>
 
 
