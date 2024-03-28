@@ -3,29 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clickable Buttons with Arrow</title>
+    <title>Climate Driver Impacts</title>
     <style>
         .button {
             display: inline-block;
-            /*padding: 5px 30px;*/
             width: 100px;
             height: 50px;
             text-decoration: none;
-            border: none;
+            border: 1px solid black;
             border-radius: 5px;
             cursor: pointer;
             margin: 10px;
-            position: relative; /* Added */
+            position: relative;
+            background: white;
+            color:black;
         }
         .flex-container-row {
             display: flex;
             flex-direction: row;
             background-color: white;
+            justify-content: center;
         }
         .flex-container-col {
             display: flex;
             flex-direction: column;
-            background-color: white;
+            background-color: maroon;
         }
     </style>
 </head>
@@ -143,38 +145,53 @@
         <div><button class="button" style="background: #E9D700FF; font-size:xx-large; color:black; cursor: default;" disabled>&#x2197;</button></div>
         <div><button class="button" style="background: #E9D700FF; font-size:xx-large; color:black; cursor: default;" disabled>&#x2191;</button></div>
     </div>
-    <div class="flex-container-col">
-
-        <div class="flex-container-row">
-            <div><button class="button" style="background: #FDFBC7FF; font-size: medium" onclick="cream()">Set Color</button></div>
-            <div><button class="button" style="background: #FFFFFF; font-size: xx-large" onclick="north_arrow()">&#x2191;</button></div>
-        </div>
-
-        <div class="flex-container-row">
-            <div><button class="button" style="background: #E9D700FF; font-size: medium" onclick="yellow()">Set Color</button></div>
-            <div><button class="button" style="background: #FFFFFF; font-size: xx-large" onclick="north_east_arrow()">&#x2197;</button></div>
-        </div>
-
-        <div class="flex-container-row">
-            <div><button class="button" style="background: #D6A414FF; font-size: medium" onclick="orange()">Set Color</button></div>
-            <div><button class="button" style="background: #FFFFFF; font-size: xx-large" onclick="east_arrow()">&#x2192;</button></div>
-        </div>
-
-        <div class="flex-container-row">
-            <div><button class="button" style="background: #A3162BFF; font-size: medium" onclick="red()">Set Color</button></div>
-            <div><button class="button" style="background: #FFFFFF; font-size: xx-large" onclick="south_east_arrow()">&#x2198;</button></div>
-        </div>
-
-
-
-    </div>
 </div>
+
+<div class="flex-container-col">
+    <div class="flex-container-row">
+        <div><button class="button" style="font-size:small; color:black; cursor: default; width:150px; height: 50px" disabled>Driver's impact on biodiversity over the last century</button></div>
+        <div><button class="button" style="font-size:small; color:black; cursor: default; width:150px; height: 50px" disabled>Driver's current trends</button></div>
+    </div>
+
+    <div class="flex-container-row">
+        <div><button class="button" style="background: #FFFFFF; font-size:small; color:black; cursor: default;" disabled>Low</button></div>
+        <div><button class="button" style="background: #FDFBC7FF; font-size: medium" onclick="cream()">Set Color</button></div>
+        <div><button class="button" style="background: #FFFFFF; font-size: xx-large" onclick="south_east_arrow()">&#x2198;</button></div>
+        <div><button class="button" style="background: #FFFFFF; font-size:small; color:black; cursor: default;" disabled>Decreasing Impact</button></div>
+    </div>
+
+    <div class="flex-container-row">
+        <div><button class="button" style="background: #FFFFFF; font-size:small; color:black; cursor: default;" disabled>Moderate</button></div>
+        <div><button class="button" style="background: #E9D700FF; font-size: medium" onclick="yellow()">Set Color</button></div>
+        <div><button class="button" style="background: #FFFFFF; font-size: xx-large" onclick="east_arrow()">&#x2192;</button></div>
+        <div><button class="button" style="background: #FFFFFF; font-size:small; color:black; cursor: default;" disabled>Continuing Impact</button></div>
+    </div>
+
+    <div class="flex-container-row">
+        <div><button class="button" style="font-size:small; cursor: default;" disabled>High</button></div>
+        <div><button class="button" style="background: #D6A414FF; font-size: medium" onclick="orange()">Set Color</button></div>
+        <div><button class="button" style="background: #FFFFFF; font-size: xx-large" onclick="north_east_arrow()">&#x2197;</button></div>
+        <div><button class="button" style="font-size:small; cursor: default;" disabled>Increasing Impact</button></div>
+    </div>
+
+    <div class="flex-container-row">
+        <div><button class="button" style="font-size:small; cursor: default;" disabled>Very High</button></div>
+        <div><button class="button" style="background: #A3162BFF; font-size: medium" onclick="red()">Set Color</button></div>
+        <div><button class="button" style="background: #FFFFFF; font-size: xx-large" onclick="north_arrow()">&#x2191;</button></div>
+        <div><button class="button" style="font-size:small; cursor: default;" disabled>Very Rapid Increase of the Impact</button></div>
+    </div>
+
+
+
+</div>
+
+
 <script>
     let curr_button = null;
 
     function buttonClicked(buttonId) {
         if (curr_button){
-            curr_button.style.border = "0px";
+            curr_button.style.border = "1px solid black";
             if (curr_button === document.getElementById(buttonId)){
                 curr_button = null;
                 return;
@@ -195,10 +212,6 @@
     function red(){
         curr_button.style.background = "rgb(163, 22, 43)";
     }
-    function reset(){
-        curr_button.style.background = "rgb(255,255,255)";
-        curr_button.innerHTML = '&#x2194';
-    }
 
     function north_arrow(){
         curr_button.innerHTML = '&#x2191';
@@ -213,9 +226,6 @@
     function south_east_arrow(){
         curr_button.innerHTML = '&#x2198';
         curr_button.style.padding = "4px 30px";
-    }
-    function south_arrow(){
-        curr_button.innerHTML = '&#x2193';
     }
 
 </script>
