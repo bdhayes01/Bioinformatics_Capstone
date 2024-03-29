@@ -7,4 +7,8 @@ graph = ggplot(data = data, aes(x = 1:length(Population), y = Population)) +
   theme_bw() 
 print(graph)
 
-#Pop15
+graph2 = ggplot(data = data, aes(x = 1:length(Population), y = Population)) +
+  geom_point(color = "red", size = 4) +
+  xlab("Week") +
+  theme_bw() 
+print(graph2)
