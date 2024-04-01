@@ -19,12 +19,12 @@ def graph_data():
   x = np.array(x).reshape(-1,1)
   pop = [0,0,0, 0, 0] + pop
   plt.plot(x, pop)
-  plt.plot(x, 125 * np.ones(len(x)), color= "red")
+  plt.plot(x, 125 * np.ones(len(x)), color= "red") # Comment out this line if you wish to exclude the carrying capacity line.
 
   y = []
   for i in x:
     y.append(sigmoid(i - 2005))
-  plt.plot(x, y, 'r--')
+  plt.plot(x, y, 'r--') # Comment out this line if you wish to exclude the logistical growth line. 
   
   plt.ylabel("Number of Wolves")
   plt.xlabel("Year")
