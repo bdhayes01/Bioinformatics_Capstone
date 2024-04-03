@@ -10,5 +10,5 @@ The Species Loss to Elevation graph is created using [this .R file](https://gith
 **Global Biodiversity Loss** <br>  
 The table that this section references is on page 68 of a [Millenium Assessment pdf](https://www.millenniumassessment.org/documents/document.356.aspx.pdf). 
 
-The interactive website is created using [this .html file](https://github.com/bdhayes01/Bioinformatics_Capstone/blob/Website/index.html). The screenshots come from the interactive website. 
+The interactive website is created using [this .html file](https://github.com/bdhayes01/Bioinformatics_Capstone/blob/main/index.html). The screenshots come from the interactive website. 
 
