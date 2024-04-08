@@ -17,7 +17,7 @@ supplementary Material of the [Martin paper](https://www.science.org/doi/full/10
 3. The pedigree in question 3 based on the column with Decipher ID 268052. The inheritance is de novo, so we know that the pedigree would look as shown in the module.
 
 ## Section 4: Examining Alternative Modes of Inheritance
-The graph seen in the fourth section of the module was used directly from [this](https://www.science.org/doi/full/10.1126/science.aar6731?casa_token=B8mi7XvWvqAAAAAA%3Ant_1zKNG7bshPNBVbJDT4em3h5hosfAipGxKyEP6Y5rTsVCYJfYSg19ySijqHfmlQ8-oO9cN0nqX4Q) paper.
+The graph seen in the fourth section of the module was used directly from figure 2 of [this paper](https://www.science.org/doi/full/10.1126/science.aar6731?casa_token=B8mi7XvWvqAAAAAA%3Ant_1zKNG7bshPNBVbJDT4em3h5hosfAipGxKyEP6Y5rTsVCYJfYSg19ySijqHfmlQ8-oO9cN0nqX4Q).
 
 ## Section 5: Founder's Effect and Homozygosity
 The table used in the final section of this module was made from the data found in [this](https://www.nature.com/articles/s41586-022-05473-8?fromPaywallRec=true) paper under the section titled “GWAs of Nationwide Health Registries”. The full data set provided much more information than was necessary for the understanding of Biology 100 students. We created our own table using the same data but removing extraneous data for the subject we were examining. 
