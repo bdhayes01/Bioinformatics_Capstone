@@ -1,3 +1,5 @@
+[Population Growth Module](https://docs.google.com/document/d/1wX2AC8P9GydNZ0_Sje4febQU4yRFQf8X65_-NiMHlDM/edit?usp=sharing)
+
 **Yellowstone Wolves:** <br>  
 The Yellowstone wolves data was pulled from [this dataset](https://www.kaggle.com/datasets/nathanbrouwer/yellowstone-wolves), available on kaggle. After giving a brief background, a graph was given for students to interact with. The code for producing the graph is on the [github](https://github.com/bdhayes01/Bioinformatics_Capstone/blob/main/graphs/Population_Growth_Yellowstone_Wolves_Graph) we made for the project. As per the comments, the code will produce the answer key, while commenting out two line creation functions (lines 22 & 27) will produce the graph for students. 
 
