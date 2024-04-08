@@ -7,7 +7,7 @@ It also has an excerpt from a [BBC article](https://www.bbc.com/creativediversit
 and statistics from another [study](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5079102/) to support the claim those of Pakistani descent in Britain showed higher consanguinity.
 
 ## Section 2: Analyzing Genotypes of Disease
-The graph used from the second section using the two populations in Britain was pulled from [this paper](https://www.science.org/doi/full/10.1126/science.aar6731?casa_token=B8mi7XvWvqAAAAAA%3Ant_1zKNG7bshPNBVbJDT4em3h5hosfAipGxKyEP6Y5rTsVCYJfYSg19ySijqHfmlQ8-oO9cN0nqX4Q). The actual graph used (figure 1 in the paper) was very complicated and referenced genetics beyond what was necessary for introductory biology students to use. We created a simplified graph for students to reference, using google drawings to remake figure 1 into a format more familiar for students.
+The graph used from the second section using the two populations in Britain was pulled from [this paper](https://www.science.org/doi/full/10.1126/science.aar6731?casa_token=B8mi7XvWvqAAAAAA%3Ant_1zKNG7bshPNBVbJDT4em3h5hosfAipGxKyEP6Y5rTsVCYJfYSg19ySijqHfmlQ8-oO9cN0nqX4Q). The actual graph used (figure 1 in the paper) was very complicated and referenced genetics beyond what was necessary for introductory biology students to use. We created a simplified graph for students to reference, using google drawings to remake figure 1 into a format more accessibile for students.
 
 ## Section 3: Assessing Modes of Inheritance 
 This section displays pedigrees that were made from data in [Table S6](https://www.science.org/doi/suppl/10.1126/science.aar6731/suppl_file/aar6731_martin_table-s6.xlsx) in
