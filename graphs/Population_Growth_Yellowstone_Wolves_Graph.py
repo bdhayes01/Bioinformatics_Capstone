@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 def load_dataset():
-  wolf_data = pd.read_csv("https://raw.githubusercontent.com/bdhayes01/Bioinformatics_Capstone/main/yellowstone_wolves.csv")
+  wolf_data = pd.read_csv("https://raw.githubusercontent.com/bdhayes01/Bioinformatics_Capstone/main/data/yellowstone_wolves.csv")
   wolf_years = list(wolf_data['year'])
   wolf_pop = list(wolf_data['wolves'])
   wolf_pack = list(wolf_data['packs'])
